@@ -1,6 +1,16 @@
-// import using require
+class Shape {
+   
+    constructor(color) {
+        this.color = "RED";
+    }
 
-// declare class
+    drawShape() {
+        console.log(`${this.color} is colored`);
 
+    }
+    calculateArea() {
+        console.log(`${this.color}  area is to be calculated`)
+    }
 
-// export class using module.exports
+}
+module.exports = Shape
