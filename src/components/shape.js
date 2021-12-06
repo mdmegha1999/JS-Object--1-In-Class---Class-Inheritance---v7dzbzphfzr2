@@ -5,17 +5,21 @@
 
 // export class using module.exports
 
-let Shape = require('./shape')
 
 
-export class Circle extends Shape {
+class Shape {
+   
     constructor(color) {
-        super(color);
+        this.color = "RED";
+    }
+
+    drawShape() {
+        console.log(`${this.color} is colored`);
+
     }
     calculateArea() {
-        console.log(`${this.color}  area is calculated`)
-
+        console.log(`${this.color}  area is to be calculated`)
     }
-}
 
-module.exports = Circle
+}
+module.exports = Shape
